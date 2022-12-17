@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+    <com.link.analogclock.MyAnalogClock
+        android:id="@+id/myClock"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="20dp"
+        app:hour="12"
+        app:minute="0"
+        app:second="0">
+
+    </com.link.analogclock.MyAnalogClock>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/hourEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Hour">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/minEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Min">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/secEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Sec">
+
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#332F2F"
+            android:onClick="btnOnClick"
+            android:text="Change time"
+            android:textSize="12sp"
+            tools:ignore="UsingOnClickInXml">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
